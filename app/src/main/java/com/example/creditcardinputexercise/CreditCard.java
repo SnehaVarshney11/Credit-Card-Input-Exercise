@@ -13,7 +13,6 @@ public class CreditCard {
         this.FName = null;
         this.LName = null;
     }
-
     public CreditCard(String CardNum, String expDate, String cvv, String fName, String lName) {
         this.CardNum = CardNum;
         this.ExpDate = expDate;
