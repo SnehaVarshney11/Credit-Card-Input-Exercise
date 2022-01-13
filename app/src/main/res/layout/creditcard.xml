@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilCardNumber"
+            style="@style/CardInputBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:hint="@string/CardNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/EditTexts"
+                android:id="@+id/etCardNumber"
+                android:maxLength="19"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/CardInputBox"
+            android:id="@+id/tilExpDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tilcvv"
+            app:layout_constraintTop_toBottomOf="@+id/tilCardNumber"
+            android:layout_marginEnd="@dimen/vertical_margin"
+            android:layout_marginRight="@dimen/vertical_margin"
+            android:hint="@string/ExpireDate">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etExpDate"
+                style="@style/EditTexts"
+                android:maxLength="5"
+                android:digits="01234567890"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/CardInputBox"
+            android:id="@+id/tilcvv"
+            app:layout_constraintStart_toEndOf="@+id/tilExpDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilCardNumber"
+            android:layout_marginStart="@dimen/vertical_margin"
+            android:layout_marginLeft="@dimen/vertical_margin"
+            android:hint="@string/cvv">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCVV"
+                style="@style/EditTexts"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:maxLength="4" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/CardInputBox"
+            android:id="@+id/tilFName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tilLName"
+            app:layout_constraintTop_toBottomOf="@+id/tilExpDate"
+            android:layout_marginStart="@dimen/vertical_margin"
+            android:layout_marginRight="@dimen/vertical_margin"
+            android:hint="@string/FirstName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/StartOrEndName"
+                android:id="@+id/etFName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/CardInputBox"
+            android:id="@+id/tilLName"
+            app:layout_constraintStart_toEndOf="@id/tilFName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilExpDate"
+            android:layout_marginStart="@dimen/vertical_margin"
+            android:layout_marginLeft="@dimen/vertical_margin"
+            android:hint="@string/LastName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/StartOrEndName"
+                android:id="@+id/etLName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit_btn"
+            android:text="@string/pay"
+            android:paddingTop="@dimen/button_vertical_padding"
+            android:paddingBottom="@dimen/button_vertical_padding"
+            app:layout_constraintTop_toBottomOf="@id/tilFName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

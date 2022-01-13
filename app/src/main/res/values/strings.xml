@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Credit Card Input Exercise</string>
+
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="CardNumber">Card Number</string>
+    <string name="ExpireDate">MM/YY</string>
+    <string name="cvv">Security Code</string>
+    <string name="pay">Submit Payment</string>
+    <string name="success">Payment Successful</string>
+    <string name="ok">OK</string>
+    <string name="EnterFirstName">Please Enter First Name</string>
+    <string name="EnterLastName">Please Enter Last Name</string>
+    <string name="invalidCdNum">Invalid Card Number</string>
+    <string name="invalidExpDate">Invalid MM/YY exp. date</string>
+    <string name="invalidCVV">Invalid Security Code</string>
+</resources>

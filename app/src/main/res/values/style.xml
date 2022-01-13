@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorAccent">@color/colorGreen</item>
+        <item name="colorPrimaryDark">@color/colorBlueDark</item>
+    </style>
+    
+    <style name="AlertTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorGreen</item>
+        <item name="dialogCornerRadius">8dp</item>
+    </style>
+
+    <style name="CardInputBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="colorAccent">@color/colorGreen</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="errorEnabled">true</item>
+    </style>
+    
+    <style name="EditTexts">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="StartOrEndName" parent="EditTexts">
+        <item name="android:digits">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+</resources>
